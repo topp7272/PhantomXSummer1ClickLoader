@@ -1,0 +1,14 @@
+getgenv().config = {
+    AutoRebirth = true, --// Turn auto rebirth off if false
+    HatchCount = 1, --// How many eggs
+    Delay = 0.1, --// Delay between buying tiles
+    HatchDelay = 2, --// Delay between hatching eggs if not titanic egg / configured chance egg
+    Optimize = true, --// Opti/gui
+    FPSCap = 5, --// What FPS to use
+    TeleportCheckInterval = 5, -- // How often to check whether near egg
+    StopOnTitanic = false, --// if true, will stop rebirthing when Titanic egg is present
+    StopOnChance = {}, --// Valid options: "100x", "25x", "5x", "2x", "1x", if StopOnTiantic is true, this will be ignored
+    SpecificTitanicEgg = "Block Party Tier Five 100x" --// New: Set to nil or nothing to disable, or change part before x (not egg name)
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/topp7272/PhantomXSummer1ClickLoader/refs/heads/main/Summersummer.lua.txt"))()
